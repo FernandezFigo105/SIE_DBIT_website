@@ -128,22 +128,24 @@ header{
 
 .container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content:space-; /* Distribute the cards with equal spacing between them */
+    
     background-color: #003329;
     margin-top: 50px;
-    overflow: hidden;
+    max-width: 100%;
+    
   }
   
   .card {
-    flex-grow: 1; /* Add this property to make the cards distribute evenly */
     position: relative;
-    width: 450px;
-    height: 250px;
+     /* Adjust the card height as needed */
     border-radius: 30px;
+    width: 400px;
+    height: 250px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    margin:20px;
+    margin: 70px;
+    margin-top: 20px; /* Add margin to create spacing between rows of cards */
     overflow: hidden;
   }
   
@@ -183,6 +185,7 @@ header{
   opacity: 1;
   transform: translateY(0);
 }
+
 
 /* Add padding to the first card */
 
